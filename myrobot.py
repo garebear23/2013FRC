@@ -9,15 +9,8 @@ class MyRobot(wpilib.SimpleRobot):
     def RobotInit(self):
         # Create subsystems
         logging.info("Creating subsystems")
-        Robot.AddSubsystem("arm", RobotArm)
         Robot.AddSubsystem("drive", RobotDrive)
-        Robot.AddSubsystem("feeder", RobotFeeder)
         Robot.AddSubsystem("intake", RobotIntake)
-        Robot.AddSubsystem("shooter", RobotShooter)
-        Robot.AddSubsystem("conveyor", RobotConveyor)
-        Robot.AddSubsystem("elevation", RobotElevation)
-        Robot.AddSubsystem("uptake", RobotUptake)
-        Robot.AddSubsystem("hanger", RobotHanger)
         Robot.AddSubsystem("shooterp", RobotShooterPiston)
 
         #StartImageServer()
